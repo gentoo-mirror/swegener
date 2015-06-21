@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst preinst prepare
+DEPEND=dev-libs/libxml2 ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( dev-libs/openssl ) ) ncurses? ( sys-libs/ncurses ) parcheck? ( app-arch/libpar2 dev-libs/libsigc++:2 )
+DESCRIPTION=A command-line based binary newsgrapper supporting .nzb files
+EAPI=2
+HOMEPAGE=http://nzbget.sourceforge.net/
+IUSE=debug ssl gnutls ncurses parcheck
+KEYWORDS=~alpha ~amd64 ~ppc ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/libxml2 ssl? ( gnutls? ( net-libs/gnutls ) !gnutls? ( dev-libs/openssl ) ) ncurses? ( sys-libs/ncurses ) parcheck? ( app-arch/libpar2 dev-libs/libsigc++:2 )
+SLOT=0
+SRC_URI=mirror://sourceforge/nzbget/nzbget-0.7.0-testing-r380.tar.gz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=80c1ff9273c46ffb99f8d4d6f6328994

@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=tcl? ( dev-lang/tcl ) xml? ( dev-libs/libxml )
+DESCRIPTION=An IRC bot coded in C++
+HOMEPAGE=http://home.darksun.com.pt/mbot/
+IUSE=ipv6 tcl xml
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=tcl? ( dev-lang/tcl ) xml? ( dev-libs/libxml )
+SLOT=0
+SRC_URI=http://home.darksun.com.pt/mbot/sources/mbot-5.2.0.tgz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=bca4def58357e2e4c90fcfa7c32d71de

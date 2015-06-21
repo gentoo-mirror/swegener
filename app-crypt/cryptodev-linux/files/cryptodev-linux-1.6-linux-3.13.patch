@@ -1,0 +1,60 @@
+--- cryptodev-linux-1.6/cryptlib.c
++++ cryptodev-linux-1.6/cryptlib.c
+@@ -23,6 +23,7 @@
+  * 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+  */
+ 
++#include <linux/version.h>
+ #include <linux/crypto.h>
+ #include <linux/mm.h>
+ #include <linux/highmem.h>
+@@ -220,7 +221,11 @@
+ {
+ 	int ret;
+ 
++#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 13, 0)
+ 	INIT_COMPLETION(cdata->async.result->completion);
++#else
++	reinit_completion(&cdata->async.result->completion);
++#endif
+ 
+ 	if (cdata->aead == 0) {
+ 		ablkcipher_request_set_crypt(cdata->async.request,
+@@ -243,7 +248,11 @@
+ {
+ 	int ret;
+ 
++#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 13, 0)
+ 	INIT_COMPLETION(cdata->async.result->completion);
++#else
++	reinit_completion(&cdata->async.result->completion);
++#endif
+ 	if (cdata->aead == 0) {
+ 		ablkcipher_request_set_crypt(cdata->async.request,
+ 			(struct scatterlist *)src, dst,
+@@ -355,7 +364,11 @@
+ {
+ 	int ret;
+ 
+-	INIT_COMPLETION(hdata->async.result->completion);
++#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 13, 0)
++	INIT_COMPLETION(hdata->async.result->completion);
++#else
++	reinit_completion(&hdata->async.result->completion);
++#endif
+ 	ahash_request_set_crypt(hdata->async.request, sg, NULL, len);
+ 
+ 	ret = crypto_ahash_update(hdata->async.request);
+@@ -367,7 +380,11 @@
+ {
+ 	int ret;
+ 
+-	INIT_COMPLETION(hdata->async.result->completion);
++#if LINUX_VERSION_CODE < KERNEL_VERSION(3, 13, 0)
++	INIT_COMPLETION(hdata->async.result->completion);
++#else
++	reinit_completion(&hdata->async.result->completion);
++#endif
+ 	ahash_request_set_crypt(hdata->async.request, NULL, output, 0);
+ 
+ 	ret = crypto_ahash_final(hdata->async.request);

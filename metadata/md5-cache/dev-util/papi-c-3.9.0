@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=dev-util/perfctr-2.6.27
+DESCRIPTION=Performance Application Programming Interface
+HOMEPAGE=http://icl.cs.utk.edu/papi/
+KEYWORDS=~amd64
+LICENSE=BSD
+RDEPEND=>=dev-util/perfctr-2.6.27
+SLOT=0
+SRC_URI=http://icl.cs.utk.edu/projects/papi/downloads/papi-c-3.9.0.tar.gz
+_eclasses_=multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=59b73d9b5f1ec69e6ccddbf06eae2fea

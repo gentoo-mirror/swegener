@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install postinst setup
+DEPEND=virtual/pam >=sys-libs/ncurses-5.1 ssl? ( dev-libs/openssl ) ldap? ( net-nds/openldap ) kerberos? ( app-crypt/mit-krb5 ) spell? ( app-text/aspell )
+DESCRIPTION=The continuation of the Alpine email client
+EAPI=3
+HOMEPAGE=http://patches.freeiz.com/alpine/
+IUSE=debug doc ipv6 kerberos ldap nls onlyalpine passfile smime spell ssl threads
+KEYWORDS=~amd64 ~x86
+LICENSE=Apache-2.0
+RDEPEND=virtual/pam >=sys-libs/ncurses-5.1 ssl? ( dev-libs/openssl ) ldap? ( net-nds/openldap ) kerberos? ( app-crypt/mit-krb5 ) spell? ( app-text/aspell ) app-misc/mime-types !mail-client/re-alpine !onlyalpine? ( !app-editors/pico ) !onlyalpine? ( !mail-client/pine ) !<=net-mail/uw-imap-2004g
+SLOT=0
+SRC_URI=http://patches.freeiz.com/alpine/patches/alpine-2.11/alpine-2.11.tar.xz -> alpine-2.11_p27.tar.xz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=1000d9564fbcdaf76dbb8a1304f57a31

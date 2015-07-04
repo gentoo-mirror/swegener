@@ -10,7 +10,7 @@ inherit distutils-r1
 
 DESCRIPTION="Synchronous evented IO"
 HOMEPAGE="https://github.com/geertj/gruvi"
-SRC_URI="https://github.com/geertj/${PN}/archive/${P}.tar.gz"
+SRC_URI="https://github.com/geertj/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
@@ -21,5 +21,3 @@ DEPEND=">=dev-python/cffi-0.8
 	>=dev-python/fibers-0.4
 	dev-python/pyuv"
 RDEPEND="${DEPEND}"
-
-S="${WORKDIR}"/${PN}-${P}

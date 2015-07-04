@@ -6,19 +6,17 @@ EAPI="5"
 
 PYTHON_COMPAT=( python{2_7,3_{3,4}} )
 
-EGIT_REPO_URI="git://github.com/geertj/gruvi.git"
+EGIT_REPO_URI="git://github.com/saghul/pyuv.git"
 
 inherit distutils-r1 git-r3
 
-DESCRIPTION="Synchronous evented IO"
-HOMEPAGE="https://github.com/geertj/gruvi"
+DESCRIPTION="Python interface for libuv"
+HOMEPAGE="https://github.com/saghul/pyuv"
 
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
 
-DEPEND=">=dev-python/cffi-1.0.0
-	>=dev-python/fibers-0.4
-	>=dev-python/pyuv-1.1.0"
+DEPEND=""
 RDEPEND="${DEPEND}"

@@ -6,16 +6,15 @@ EAPI="5"
 
 PYTHON_COMPAT=( python{2_7,3_{3,4}} )
 
-EGIT_REPO_URI="git://github.com/geertj/gruvi.git"
-
-inherit distutils-r1 git-r3
+inherit distutils-r1
 
 DESCRIPTION="Synchronous evented IO"
 HOMEPAGE="https://github.com/geertj/gruvi"
+SRC_URI="https://github.com/geertj/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 DEPEND=">=dev-python/cffi-1.0.0

@@ -1,9 +1,9 @@
+_eclasses_=git-2	1bb87192831f668cd20d93ffb1689c94
+_md5_=de9ee2ebe447f1d9943d582c1d09713c
+SLOT=0
 DEFINED_PHASES=install unpack
+EAPI=5
 DEPEND=dev-vcs/git
 DESCRIPTION=A static multicast route tool
-EAPI=5
-HOMEPAGE=http://troglobit.com/smcroute.html
 LICENSE=GPL-2
-SLOT=0
-_eclasses_=git-2	e28f0d8a9b321431b1e699782851b827
-_md5_=de9ee2ebe447f1d9943d582c1d09713c
+HOMEPAGE=http://troglobit.com/smcroute.html

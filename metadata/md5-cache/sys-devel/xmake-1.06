@@ -1,8 +1,0 @@
-DEFINED_PHASES=compile install
-DESCRIPTION=Portable [X]Make utility
-HOMEPAGE=http://apollo.backplane.com/xmake/
-KEYWORDS=~x86
-LICENSE=public-domain
-SLOT=0
-SRC_URI=http://apollo.backplane.com/xmake/xmake-1.06.tgz
-_md5_=5197dd434b8b199572e283bacda08f87

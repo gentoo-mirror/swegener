@@ -31,7 +31,7 @@ net-misc/smcroute 9999: A static multicast route tool
 net-nntp/nzbget 0.7.0_pre357 0.7.0_pre374 0.7.0_pre380 0.8.0_pre394: A command-line based binary newsgrapper supporting .nzb files
 net-wireless/moltosenso-network-manager-iron 1.0: moltosensor Network Manager
 sys-apps/man-db 2.4.3 2.5.1: man-db, the on-line manual database
-sys-auth/nss_updatedb 4 7 8 9 10: Utility that maintains a local cache of network directory user and group information
+sys-auth/nss_updatedb 4 7 8 9: Utility that maintains a local cache of network directory user and group information
 sys-auth/pam-script 1.1.0 1.1.1: execute scripts during authorization, password changes and sessions
 sys-auth/pam_ccreds 1 4 8: PAM module that provides disconnected authentication
 sys-devel/xmake 1.06: Portable [X]Make utility

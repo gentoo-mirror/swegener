@@ -18,6 +18,7 @@ dev-vcs/tig 9999: Tig: text mode interface for git
 mail-client/alpine 2.00_p26 2.00_p41 2.00_p50 2.00_p51 2.00_p52 2.00_p53 2.00_p73 2.00_p84 2.10 2.11_p24 2.11_p25 2.11_p27 2.20_p16: The continuation of the Alpine email client
 mail-client/re-alpine 2.02 2.03: The continuation of the Alpine email client
 mail-filter/sieve-connect 0.33 0.41 0.44 0.57 0.59 0.65 0.69 0.77 0.81 0.84: Sieve Command Line Interface
+media-libs/libdvbcsa 1.1.0: free implementation of the DVB Common Scrambling Algorithm
 media-plugins/vlc-htsp 9999: Plugin for VLC to access TVHeadend via HTSP
 media-tv/dvbloop-svn 0: A virtual DVB adapter for Linux
 net-analyzer/prettyping 1.0.0 9999: wrapper around the standard ping tool

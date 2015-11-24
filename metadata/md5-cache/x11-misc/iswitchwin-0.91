@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=dev-libs/glib dev-libs/dbus-glib gnome-base/libglade x11-libs/libwnck
+DESCRIPTION=iswitchwin lets you easily switch between windows on your workspaces
+EAPI=0
+HOMEPAGE=http://martinman.net/software/iswitchwin
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-libs/glib dev-libs/dbus-glib gnome-base/libglade x11-libs/libwnck
+SLOT=0
+SRC_URI=http://martinman.net/download/iswitchwin/iswitchwin-0.91.tar.gz
+_eclass_exported_funcs=src_install:-
+_md5_=30fbbfa35a9c40966303e7e619ab507c

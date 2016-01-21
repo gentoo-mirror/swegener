@@ -3,8 +3,10 @@ app-crypt/cryptodev-linux 1.6: /dev/crypto kernel driver
 app-misc/pmr 0.11 0.12: Command line filter that displays the data bandwidth and total number of bytes passing through a pipe
 dev-embedded/ft232r_prog 1.24 1.25: Tool for reconfiguring FTDI FT232R chips
 dev-embedded/ihextools 0.3: Tools for Intel HEX
+dev-embedded/stlink 1.1.0 9999: stm32 discovery line linux programmer
 dev-embedded/stm32flash 0.4 9999: Open source flash program for STM32 using the ST serial bootloader
 dev-embedded/stm8flash 9999: Link programmer for STM8 devices
+dev-lang/micropython 1.5.2 9999: Micro Python
 dev-lang/onyx 5.1.2: Onyx is a powerful stack-based, multi-threaded, interpreted, general purpose programming language
 dev-libs/libpfm 3.2.070507 3.2.071017 3.3 3.4 3.52: the hardware-based performance monitoring interface for Linux
 dev-python/fibers 0.4.0: Lightweight cooperative microthreads for Python
@@ -22,6 +24,7 @@ mail-client/re-alpine 2.02 2.03: The continuation of the Alpine email client
 mail-filter/sieve-connect 0.33 0.41 0.44 0.57 0.59 0.65 0.69 0.77 0.81 0.84: Sieve Command Line Interface
 media-libs/libdvbcsa 1.1.0: free implementation of the DVB Common Scrambling Algorithm
 media-plugins/vlc-htsp 9999: Plugin for VLC to access TVHeadend via HTSP
+media-sound/cmus 9999: A ncurses based music player with plugin support for many formats
 media-tv/dvbloop-svn 0: A virtual DVB adapter for Linux
 net-analyzer/prettyping 1.0.0 9999: wrapper around the standard ping tool
 net-dns/avahi-git 0.6: System which facilitates service discovery on a local network
@@ -34,6 +37,7 @@ net-misc/rsync 3.1.0_pre201005291806 3.1.0_pre201006050613 3.1.0_pre201007031558
 net-misc/smcroute 9999: A static multicast route tool
 net-nntp/nzbget 0.7.0_pre357 0.7.0_pre374 0.7.0_pre380 0.8.0_pre394: A command-line based binary newsgrapper supporting .nzb files
 net-wireless/moltosenso-network-manager-iron 1.0: moltosensor Network Manager
+sci-geosciences/viking 9999: GPS data editor and analyzer
 sys-apps/man-db 2.4.3 2.5.1: man-db, the on-line manual database
 sys-auth/nss_updatedb 4 7 8 9 10: Utility that maintains a local cache of network directory user and group information
 sys-auth/pam-script 1.1.0 1.1.1: execute scripts during authorization, password changes and sessions

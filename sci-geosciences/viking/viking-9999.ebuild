@@ -40,6 +40,7 @@ RDEPEND="${COMMONDEPEND}
 DEPEND="${COMMONDEPEND}
 	app-text/gnome-doc-utils
 	dev-util/intltool
+	dev-util/gtk-doc
 	dev-util/gtk-doc-am
 	app-text/rarian
 	dev-libs/libxslt

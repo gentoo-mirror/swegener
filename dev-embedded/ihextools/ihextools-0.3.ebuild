@@ -8,7 +8,7 @@ inherit toolchain-funcs
 
 DESCRIPTION="Tools for Intel HEX"
 HOMEPAGE="https://bitbucket.org/martin_scharrer/ihextools"
-SRC_URI="http://cdn.bitbucket.org/martin_scharrer/ihextools/downloads/${PN}-v${PV}-src.zip"
+SRC_URI="https://bitbucket.org/martin_scharrer/ihextools/downloads/${PN}-v${PV}-src.zip"
 
 LICENSE="GPL-3"
 SLOT="0"

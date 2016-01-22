@@ -8,7 +8,7 @@ EGIT_REPO_URI="git://github.com/wontfix-org/klemmbrett.git"
 
 PYTHON_COMPAT=( python2_7 )
 
-inherit git-2 distutils-r1
+inherit git-r3 distutils-r1
 
 DESCRIPTION="Easy clipboard management"
 HOMEPAGE="https://github.com/wontfix-org/klemmbrett/"

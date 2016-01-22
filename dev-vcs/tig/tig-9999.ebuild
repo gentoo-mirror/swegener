@@ -2,12 +2,11 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header$
 
-EAPI="4"
+EAPI="5"
 
 EGIT_REPO_URI="git://github.com/jonas/tig.git"
-EGIT_BOOTSTRAP="emake configure"
 
-inherit bash-completion-r1 git-2 autotools
+inherit bash-completion-r1 git-r3 autotools
 
 DESCRIPTION="Tig: text mode interface for git"
 HOMEPAGE="http://jonas.nitro.dk/tig/"
@@ -24,6 +23,10 @@ RDEPEND="${DEPEND}
 DEPEND="${DEPEND}
 	app-text/xmlto
 	app-text/asciidoc"
+
+src_prepare() {
+	eautoreconf
+}
 
 src_compile() {
 	default

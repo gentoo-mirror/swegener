@@ -2,11 +2,11 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=5
+EAPI="5"
 
 EGIT_REPO_URI="git://github.com/troglobit/smcroute.git"
 
-inherit git-2
+inherit git-r3 autotools
 
 DESCRIPTION="A static multicast route tool"
 HOMEPAGE="http://troglobit.com/smcroute.html"
@@ -19,6 +19,10 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
+
+src_prepare() {
+	eautoreconf
+}
 
 src_install() {
 	default

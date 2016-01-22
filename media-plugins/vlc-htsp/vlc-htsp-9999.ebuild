@@ -6,7 +6,7 @@ EAPI="5"
 
 EGIT_REPO_URI="git://github.com/BtbN/vlc-htsp-plugin.git"
 
-inherit git-2 toolchain-funcs
+inherit git-r3 toolchain-funcs
 
 DESCRIPTION="Plugin for VLC to access TVHeadend via HTSP"
 HOMEPAGE="https://github.com/BtbN/vlc-htsp-plugin"

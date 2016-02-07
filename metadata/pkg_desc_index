@@ -6,7 +6,7 @@ dev-embedded/ihextools 0.3: Tools for Intel HEX
 dev-embedded/stlink 1.1.0 9999: stm32 discovery line linux programmer
 dev-embedded/stm32flash 0.4 9999: Open source flash program for STM32 using the ST serial bootloader
 dev-embedded/stm8flash 9999: Link programmer for STM8 devices
-dev-lang/micropython 1.5.2 9999: Micro Python
+dev-lang/micropython 1.5.2 1.6 9999: Micro Python
 dev-lang/onyx 5.1.2: Onyx is a powerful stack-based, multi-threaded, interpreted, general purpose programming language
 dev-libs/libpfm 3.2.070507 3.2.071017 3.3 3.4 3.52: the hardware-based performance monitoring interface for Linux
 dev-python/fibers 0.4.0: Lightweight cooperative microthreads for Python

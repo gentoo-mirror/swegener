@@ -10,5 +10,5 @@ RDEPEND=virtual/pam >=sys-libs/ncurses-5.1 ssl? ( dev-libs/openssl ) ldap? ( net
 SLOT=0
 SRC_URI=ftp://ftp.cac.washington.edu/alpine/alpine-2.00.tar.bz2 chappa? ( http://staff.washington.edu/chappa/alpine/patches/alpine-2.00/all_41.patch.gz -> alpine-2.00-chappa-all-41.patch.gz http://titan.stealer.net/~sven/distfiles/alpine/alpine-2.00-chappa-all-41.patch.gz )
 _eclass_exported_funcs=pkg_postinst:- pkg_setup:- src_unpack:- src_configure:- src_install:-
-_eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
+_eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
 _md5_=23df90e81a69ea991ea9c8151d4f23be

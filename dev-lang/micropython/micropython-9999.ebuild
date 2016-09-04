@@ -24,7 +24,8 @@ RDEPEND=""
 QA_EXECSTACK="usr/bin/micropython"
 
 src_compile() {
-	emake -C unix COPT="${CFLAGS}" STRIP="true"
+	emake -C unix deplibs CROSS_COMPILE=${CHOST}- CWARN="" COPT="${CFLAGS}" LDFLAGS="${LDFLAGS}"
+	emake -C unix micropython CROSS_COMPILE=${CHOST}- CWARN="" COPT="${CFLAGS}" STRIP="true"
 }
 
 src_install() {

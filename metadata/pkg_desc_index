@@ -12,8 +12,8 @@ dev-libs/libpfm 3.2.070507 3.2.071017 3.3 3.4 3.52: the hardware-based performan
 dev-python/fibers 0.4.0: Lightweight cooperative microthreads for Python
 dev-python/gruvi 0.10.1 0.10.2 9999: Synchronous evented IO
 dev-python/pyuv 1.0.2 1.1.0 9999: Python interface for libuv
-dev-python/tdi 0.9.9.0_alpha3836 0.9.9.0_alpha3899 0.9.9.0_alpha3946 0.9.9.0_alpha4111 0.9.9.0_alpha4289 0.9.9.5 0.9.9.6 0.9.9.7 0.9.9.8: Template Data Interface (TDI)
-dev-python/wtf 0.8.20_alpha3771 0.8.20_alpha4250 0.8.20_alpha4266 0.8.22: WSGI Tackling Framework (WTF)
+dev-python/tdi 0.9.9.0_alpha3836 0.9.9.0_alpha3899 0.9.9.0_alpha3946 0.9.9.0_alpha4111 0.9.9.0_alpha4289 0.9.9.5 0.9.9.6 0.9.9.7 0.9.9.8 0.9.9.9: Template Data Interface (TDI)
+dev-python/wtf 0.8.20_alpha3771 0.8.20_alpha4250 0.8.20_alpha4266 0.8.22 0.8.23 0.8.24 0.8.25: WSGI Tackling Framework (WTF)
 dev-util/papi-c 3.9.0: Performance Application Programming Interface
 dev-util/perfctr 2.6.27 2.6.28 2.6.29 2.6.30 2.6.31 2.6.32 2.6.33 2.6.34 2.6.35 2.6.38: Linux Performance Counters
 dev-util/pfmon 3.2.070507 3.2.071017 3.3 3.4 3.5: the hardware-based performance monitoring interface for Linux

@@ -1,4 +1,3 @@
-app-admin/petit 1.1.1: Log analysis tool for systems administrators
 app-crypt/cryptodev-linux 1.6 1.8: /dev/crypto kernel driver
 app-misc/pmr 0.11 0.12: Command line filter that displays the data bandwidth and total number of bytes passing through a pipe
 dev-embedded/ft232r_prog 1.24 1.25: Tool for reconfiguring FTDI FT232R chips

@@ -26,7 +26,6 @@ media-plugins/vlc-htsp 9999: Plugin for VLC to access TVHeadend via HTSP
 media-sound/cmus 9999: A ncurses based music player with plugin support for many formats
 media-tv/dvbloop-svn 0: A virtual DVB adapter for Linux
 net-analyzer/prettyping 1.0.0 9999: wrapper around the standard ping tool
-net-dns/avahi-git 0.6: System which facilitates service discovery on a local network
 net-im/centerim 4.22.10.5 4.22.10.11: CenterIM is a ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/LiveJournal Client
 net-irc/fi 0.0.26: F-IRC is an IRC client for terminals
 net-irc/mbot 5.2.0: An IRC bot coded in C++

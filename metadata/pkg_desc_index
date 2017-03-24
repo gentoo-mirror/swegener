@@ -8,7 +8,7 @@ dev-embedded/stm8flash 9999: Link programmer for STM8 devices
 dev-lang/micropython 1.5.2 1.6 9999: Micro Python
 dev-lang/onyx 5.1.2: Onyx is a powerful stack-based, multi-threaded, interpreted, general purpose programming language
 dev-libs/libpfm 3.2.070507 3.2.071017 3.3 3.4 3.52: the hardware-based performance monitoring interface for Linux
-dev-python/fibers 0.4.0: Lightweight cooperative microthreads for Python
+dev-python/fibers 0.4.0: Plugin for VLC to access TVHeadend via HTSP
 dev-python/gruvi 0.10.1 0.10.2 9999: Synchronous evented IO
 dev-python/pyuv 1.0.2 1.1.0 9999: Python interface for libuv
 dev-python/tdi 0.9.9.0_alpha3836 0.9.9.0_alpha3899 0.9.9.0_alpha3946 0.9.9.0_alpha4111 0.9.9.0_alpha4289 0.9.9.5 0.9.9.6 0.9.9.7 0.9.9.8 0.9.9.9: Template Data Interface (TDI)
@@ -28,7 +28,7 @@ media-tv/dvbloop-svn 0: A virtual DVB adapter for Linux
 net-analyzer/prettyping 1.0.0 9999: wrapper around the standard ping tool
 net-im/centerim 4.22.10.5 4.22.10.11: CenterIM is a ncurses ICQ/Yahoo!/AIM/IRC/MSN/Jabber/GaduGadu/RSS/LiveJournal Client
 net-irc/fi 0.0.26: F-IRC is an IRC client for terminals
-net-irc/mbot 5.2.0: An IRC bot coded in C++
+net-irc/mbot 5.2.0: F-IRC is an IRC client for terminals
 net-libs/libcidr 1.1 1.2: IP CIDR address manipulation
 net-misc/gstm 0.1 1.2: Gnome SSH Tunnel Manager
 net-misc/rsync 3.1.0_pre201005291806 3.1.0_pre201006050613 3.1.0_pre201007031558 3.1.0_pre201009110129 3.1.0_pre201010121753 3.1.0_pre201011200115 3.1.0_pre201101020527 3.1.0_pre201101140116 3.1.0_pre201101151927 3.1.0_pre201101170150 3.1.0_pre201103120015 3.1.0_pre201109230154 3.1.0_pre201110221730 3.1.0_pre201111211841 3.1.0_pre201111232037 3.1.0_pre201112161715 3.1.0_pre201112212104 3.1.0_pre201202072130 3.1.0_pre201210032147 3.1.0_pre201301182347 3.1.0_pre201301191909 3.1.0_pre201301201952 3.1.0_pre201305262335 3.1.0_pre201306022348 3.1.0_pre201306092303 3.1.0_pre201306112057 3.1.0_pre201306160452 3.1.0_pre201306231942 3.1.0_pre201307140547 3.1.0_pre201307281735 3.1.0_pre201308031744: File transfer program to keep remote files into sync

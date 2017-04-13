@@ -8,4 +8,4 @@ RDEPEND=net-misc/iputils app-shells/bash virtual/awk
 SLOT=0
 SRC_URI=https://github.com/denilsonsa/prettyping/archive/v1.0.0.tar.gz -> prettyping-1.0.0.tar.gz
 _eclass_exported_funcs=src_install:-
-_md5_=de5616cd1cc7578cc9032a060ef592ae
+_md5_=fb3b0e983009eca4d4c7c72fc1048430

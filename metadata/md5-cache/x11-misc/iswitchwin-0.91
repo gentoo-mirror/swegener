@@ -9,4 +9,4 @@ RDEPEND=dev-libs/glib dev-libs/dbus-glib gnome-base/libglade x11-libs/libwnck
 SLOT=0
 SRC_URI=http://martinman.net/download/iswitchwin/iswitchwin-0.91.tar.gz
 _eclass_exported_funcs=src_install:-
-_md5_=30fbbfa35a9c40966303e7e619ab507c
+_md5_=84c4ee267e4e4fbaa95233b87debac8e

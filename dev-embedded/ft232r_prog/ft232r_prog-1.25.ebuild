@@ -15,7 +15,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="dev-embedded/libftdi"
+DEPEND="dev-embedded/libftdi:="
 RDEPEND="${DEPEND}"
 
 src_compile() {

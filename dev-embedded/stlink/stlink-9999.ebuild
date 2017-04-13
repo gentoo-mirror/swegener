@@ -4,7 +4,7 @@
 
 EAPI="5"
 
-inherit autotools
+inherit cmake-utils
 
 DESCRIPTION="stm32 discovery line linux programmer"
 HOMEPAGE="https://github.com/texane/stlink"
@@ -18,18 +18,18 @@ fi
 
 LICENSE="as-is"
 SLOT="0"
-IUSE="gtk"
+IUSE=""
 
 RDEPEND="virtual/libusb:1
 	>=dev-libs/glib-2.32.0:2
-	gtk? ( x11-libs/gtk+:3 )"
+	x11-libs/gtk+:3"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
-src_prepare() {
-	eautoreconf || die
-}
-
 src_configure() {
-	econf $(use_with gtk)
+	local mycmakeargs=(
+		-DSTLINK_UDEV_RULES_DIR="/lib/udev/rules.d"
+	)
+
+	cmake-utils_src_configure
 }

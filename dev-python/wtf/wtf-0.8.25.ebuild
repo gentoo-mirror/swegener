@@ -1,7 +1,7 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI="6"
 
 PYTHON_COMPAT=( python2_7 )
 
@@ -33,5 +33,5 @@ src_install() {
 	distutils-r1_src_install
 
 	rm -rf "${D}"/usr/share/doc/wtf
-	use doc && dohtml -r docs/{apidoc,userdoc}
+	use doc && dodoc -r docs/{apidoc,userdoc}
 }

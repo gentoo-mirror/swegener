@@ -6,10 +6,10 @@ dev-embedded/stm32flash 0.5 9999: Open source flash program for STM32 using the 
 dev-embedded/stm8flash 9999: Link programmer for STM8 devices
 dev-lang/micropython 9999: Micro Python
 dev-python/fibers 1.0.0: Lightweight cooperative microthreads for Python
-dev-python/gruvi 0.10.1 0.10.2 9999: Synchronous evented IO
-dev-python/pyuv 1.0.2 1.1.0 9999: Python interface for libuv
-dev-python/tdi 0.9.9.0_alpha3836 0.9.9.0_alpha3899 0.9.9.0_alpha3946 0.9.9.0_alpha4111 0.9.9.0_alpha4289 0.9.9.5 0.9.9.6 0.9.9.7 0.9.9.8 0.9.9.9: Template Data Interface (TDI)
-dev-python/wtf 0.8.20_alpha3771 0.8.20_alpha4250 0.8.20_alpha4266 0.8.22 0.8.23 0.8.24 0.8.25: WSGI Tackling Framework (WTF)
+dev-python/gruvi 0.10.2 9999: Synchronous evented IO
+dev-python/pyuv 9999: Python interface for libuv
+dev-python/tdi 0.9.9.9: Template Data Interface (TDI)
+dev-python/wtf 0.8.25: WSGI Tackling Framework (WTF)
 mail-client/alpine 2.20_p19: The continuation of the Alpine email client
 net-analyzer/prettyping 1.0.0 9999: wrapper around the standard ping tool
 net-libs/libcidr 1.1 1.2: IP CIDR address manipulation

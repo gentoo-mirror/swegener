@@ -10,7 +10,9 @@ dev-python/gruvi 0.10.2 9999: Synchronous evented IO
 dev-python/pyuv 9999: Python interface for libuv
 dev-python/tdi 0.9.9.9: Template Data Interface (TDI)
 dev-python/wtf 0.8.25: WSGI Tackling Framework (WTF)
-mail-client/alpine 2.20_p19: The continuation of the Alpine email client
+mail-client/alpine 2.20 2.20_p19 2.21 2.21_p2: The continuation of the Alpine email client
+media-plugins/vlc-htsp 9999: Plugin for VLC to access TVHeadend via HTSP
+media-sound/cmus 9999: A ncurses based music player with plugin support for many formats
 net-analyzer/prettyping 9999: wrapper around the standard ping tool
 net-libs/libcidr 1.2.3: IP CIDR address manipulation
 sci-geosciences/viking 9999: GPS data editor and analyzer

@@ -32,7 +32,11 @@ RDEPEND="${DEPEND}
 
 S="${WORKDIR}"/${MY_P}
 
-[[ ${P} == *_p* ]] && PATCHES=( "${WORKDIR}"/${P}.patch )
+if [[ ${P} == *_p* ]]; then
+	PATCHES=(
+		"${WORKDIR}"/${P}.patch
+	)
+fi
 
 src_configure() {
 	econf \
@@ -57,10 +61,10 @@ src_install() {
 	if use onlyalpine
 	then
 		dobin alpine/alpine
-		doman doc/alpine.1
+		doman doc/man1/alpine.1
 	else
 		emake DESTDIR="${D}" install
-		doman doc/rpdump.1 doc/rpload.1
+		doman doc/man1/rpdump.1 doc/man1/rpload.1
 	fi
 
 	dodoc NOTICE README

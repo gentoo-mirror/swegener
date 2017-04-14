@@ -1,7 +1,7 @@
-# Copyright 1999-2015 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI="6"
 
 DESCRIPTION="GPS data editor and analyzer"
 HOMEPAGE="http://viking.sourceforge.net/"
@@ -49,7 +49,8 @@ DEPEND="${COMMONDEPEND}
 
 if [[ ${PV} == "9999" ]]; then
 	src_prepare() {
-			NOCONFIGURE="1" ./autogen.sh || die
+		eapply_user
+		NOCONFIGURE="1" ./autogen.sh || die
 	}
 fi
 

@@ -1,7 +1,7 @@
-# Copyright 1999-2012 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="4"
+EAPI="6"
 
 inherit cmake-utils
 
@@ -11,7 +11,7 @@ DESCRIPTION="Change your Pidgin status when the screensaver gets activated"
 HOMEPAGE="http://costela.net/projects/awayonlock/"
 SRC_URI="http://costela.net/files/${MY_P}.tar.gz"
 
-LICENSE=""
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""

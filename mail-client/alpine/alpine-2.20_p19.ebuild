@@ -1,7 +1,7 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="5"
+EAPI="6"
 
 inherit flag-o-matic
 
@@ -32,13 +32,9 @@ RDEPEND="${DEPEND}
 
 S="${WORKDIR}"/${MY_P}
 
-pkg_setup() {
-	append-ldflags $(no-as-needed)
-}
-
-src_prepare() {
-	epatch "${WORKDIR}"/${P}.patch
-}
+PATCHES=(
+	"${WORKDIR}"/${P}.patch
+)
 
 src_configure() {
 	econf \

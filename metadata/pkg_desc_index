@@ -1,5 +1,5 @@
-app-misc/pmr 0.11 0.12: Command line filter that displays the data bandwidth and total number of bytes passing through a pipe
-dev-embedded/ft232r_prog 1.24 1.25: Tool for reconfiguring FTDI FT232R chips
+app-misc/pmr 1.01: displays the data bandwidth and total number of bytes passing through a pipe
+dev-embedded/ft232r_prog 1.25: Tool for reconfiguring FTDI FT232R chips
 dev-embedded/ihextools 0.3: Tools for Intel HEX
 dev-embedded/stlink 1.1.0 9999: stm32 discovery line linux programmer
 dev-embedded/stm32flash 0.4 9999: Open source flash program for STM32 using the ST serial bootloader

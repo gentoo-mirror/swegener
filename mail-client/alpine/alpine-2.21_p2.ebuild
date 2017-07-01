@@ -8,9 +8,9 @@ inherit flag-o-matic
 MY_P="${P%_p*}"
 
 DESCRIPTION="The continuation of the Alpine email client"
-HOMEPAGE="http://patches.freeiz.com/alpine/"
-SRC_URI="http://patches.freeiz.com/alpine/release/src/${MY_P}.tar.xz"
-[[ ${P} == *_p* ]] && SRC_URI+=" http://patches.freeiz.com/alpine/patches/${MY_P}/all.patch.gz -> ${P}.patch.gz"
+HOMEPAGE="http://alpine.freeiz.com/alpine/"
+SRC_URI="http://alpine.freeiz.com/alpine/release/src/${MY_P}.tar.xz"
+[[ ${P} == *_p* ]] && SRC_URI+=" http://alpine.freeiz.com/alpine/patches/${MY_P}/all.patch.gz -> ${P}.patch.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"

@@ -9,5 +9,5 @@ RDEPEND=app-arch/bzip2 dev-libs/expat dev-libs/glib:2 net-misc/curl sys-libs/zli
 SLOT=0
 SRC_URI=doc? ( mirror://sourceforge/viking/viking.pdf )
 _eclass_exported_funcs=src_unpack:git-r3 src_prepare:- src_configure:- src_install:-
-_eclasses_=git-r3	cbafa3261c37c7e3af44bb16a34ea390
+_eclasses_=git-r3	78651c07ca1c1373bf81545d39eb9769
 _md5_=fc4aabec7788e9621332413fe433fe2d

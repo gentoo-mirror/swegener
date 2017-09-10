@@ -23,10 +23,10 @@ RDEPEND=""
 QA_EXECSTACK="usr/bin/micropython"
 
 src_compile() {
-	emake -C unix deplibs CROSS_COMPILE=${CHOST}- CWARN="" COPT="${CFLAGS}" LDFLAGS="${LDFLAGS}"
-	emake -C unix micropython CROSS_COMPILE=${CHOST}- CWARN="" COPT="${CFLAGS}" STRIP="true"
+	emake -C ports/unix deplibs CROSS_COMPILE=${CHOST}- CWARN="" COPT="${CFLAGS}" LDFLAGS="${LDFLAGS}"
+	emake -C ports/unix micropython CROSS_COMPILE=${CHOST}- CWARN="" COPT="${CFLAGS}" STRIP="true"
 }
 
 src_install() {
-	dobin unix/micropython
+	dobin ports/unix/micropython
 }

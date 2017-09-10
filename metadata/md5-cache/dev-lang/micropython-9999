@@ -6,4 +6,4 @@ HOMEPAGE=http://www.micropython.org/
 LICENSE=MIT
 SLOT=0
 _eclasses_=git-r3	4f7ddb4119309845d6687213171ab445
-_md5_=f1e932f984cf64f9fa812b1e50eb829c
+_md5_=86c3c8d3dc56afe3668d5fc1db19d36e

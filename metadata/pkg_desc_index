@@ -18,3 +18,4 @@ net-libs/libcidr 1.2.3: IP CIDR address manipulation
 sci-geosciences/viking 9999: GPS data editor and analyzer
 x11-misc/klemmbrett 9999: Easy clipboard management
 x11-plugins/pidgin-awayonlock 0.5.2: Change your Pidgin status when the screensaver gets activated
+x11-themes/clearlooks-phenix 7.0.1: Clearlooks-Phenix is a GTK+ 3 port of Clearlooks, the default theme for GNOME 2

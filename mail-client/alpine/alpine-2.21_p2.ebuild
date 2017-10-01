@@ -67,7 +67,7 @@ src_install() {
 
 	if use doc
 	then
-		dodoc doc/brochure.txt doc/tech-notes.txt
+		dodoc doc/brochure.txt doc/tech-notes/tech-notes.txt
 		docinto imap
 		dodoc imap/docs/*.txt imap/docs/CONFIG imap/docs/RELNOTES
 

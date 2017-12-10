@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-PYTHON_COMPAT=( python{2_7,3_{3,4}} )
+PYTHON_COMPAT=( python{2_7,3_{3,4,5}} )
 
 inherit distutils-r1
 
@@ -21,7 +21,7 @@ LICENSE="MIT"
 SLOT="0"
 IUSE=""
 
-DEPEND=">=dev-python/cffi-1.0.0
-	>=dev-python/fibers-0.4
-	>=dev-python/pyuv-1.1.0"
+DEPEND=">=dev-python/cffi-1.0.0[${PYTHON_USEDEP}]
+	>=dev-python/fibers-0.4[${PYTHON_USEDEP}]
+	>=dev-python/pyuv-1.1.0[${PYTHON_USEDEP}]"
 RDEPEND="${DEPEND}"

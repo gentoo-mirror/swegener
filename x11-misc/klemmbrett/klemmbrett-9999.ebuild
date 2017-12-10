@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-EGIT_REPO_URI="git://github.com/wontfix-org/klemmbrett.git"
+EGIT_REPO_URI="https://github.com/wontfix-org/klemmbrett.git"
 
 PYTHON_COMPAT=( python2_7 )
 

@@ -3,7 +3,7 @@
 
 EAPI="6"
 
-EGIT_REPO_URI="git://github.com/BtbN/vlc-htsp-plugin.git"
+EGIT_REPO_URI="https://github.com/BtbN/vlc-htsp-plugin.git"
 
 inherit git-r3 toolchain-funcs
 

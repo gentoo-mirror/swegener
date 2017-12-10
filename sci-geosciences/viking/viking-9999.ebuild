@@ -8,7 +8,7 @@ HOMEPAGE="http://viking.sourceforge.net/"
 IUSE="doc +exif libexif gps +magic mapnik nls sqlite"
 SRC_URI="doc? ( mirror://sourceforge/${PN}/${PN}.pdf )"
 if [[ ${PV} == "9999" ]]; then
-	EGIT_REPO_URI="git://github.com/viking-gps/viking.git"
+	EGIT_REPO_URI="https://github.com/viking-gps/viking.git"
 	inherit git-r3
 else
 	SRC_URI="${SRC_URI}

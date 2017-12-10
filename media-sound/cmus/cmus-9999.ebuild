@@ -8,7 +8,7 @@ inherit bash-completion-r1 multilib
 DESCRIPTION="A ncurses based music player with plugin support for many formats"
 HOMEPAGE="http://cmus.github.io/"
 if [[ ${PV} == "9999" ]]; then
-	EGIT_REPO_URI="git://github.com/cmus/cmus.git"
+	EGIT_REPO_URI="https://github.com/cmus/cmus.git"
 	inherit git-r3
 else
 	SRC_URI="https://github.com/cmus/cmus/archive/v${PV}.tar.gz -> ${P}.tar.gz"

@@ -18,7 +18,7 @@ IUSE="dbus doc gnome +libnotify"
 
 RDEPEND="
 	dev-python/psutil
-	x11-libs/vte:2.91[python]
+	x11-libs/vte:2.91
 	dbus? ( sys-apps/dbus )
 	gnome? (
 		dev-python/gconf-python

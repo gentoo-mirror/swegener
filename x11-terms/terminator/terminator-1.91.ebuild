@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=5
@@ -18,13 +18,13 @@ IUSE="dbus doc gnome +libnotify"
 
 RDEPEND="
 	dev-python/psutil
-	x11-libs/vte:2.91
+	x11-libs/vte:2.91[introspection]
+	x11-libs/gtk+:3[introspection]
 	dbus? ( sys-apps/dbus )
 	gnome? (
 		dev-python/gconf-python
 		dev-python/libgnome-python
 		dev-python/pygobject:3[${PYTHON_USEDEP}]
-		dev-python/pygtk:3[${PYTHON_USEDEP}]
 		)
 	libnotify? ( dev-python/notify-python[${PYTHON_USEDEP}] )
 "

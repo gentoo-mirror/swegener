@@ -19,4 +19,7 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND=""
-RDEPEND="${DEPEND}"
+RDEPEND="dev-python/pygtk:2
+	dev-python/pygobject:2
+	dev-python/notify-python
+	dev-libs/keybinder:0"

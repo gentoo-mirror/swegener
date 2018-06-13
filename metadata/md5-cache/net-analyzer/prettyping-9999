@@ -1,10 +1,10 @@
 DEFINED_PHASES=install unpack
-DEPEND=>=dev-vcs/git-1.8.2.1
+DEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=wrapper around the standard ping tool
 EAPI=6
 HOMEPAGE=http://denilson.sa.nom.br/prettyping/
 LICENSE=MIT
 RDEPEND=net-misc/iputils app-shells/bash virtual/awk
 SLOT=0
-_eclasses_=git-r3	af51ccfceeb403ab80f1bf9209d372c8
+_eclasses_=git-r3	8f6de46b0aa318aea0e8cac62ece098b
 _md5_=00fdfdc6746f8fe64ff3283cdba054c7

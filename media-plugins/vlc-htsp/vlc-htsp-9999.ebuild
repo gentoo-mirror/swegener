@@ -5,7 +5,7 @@ EAPI="6"
 
 EGIT_REPO_URI="https://github.com/BtbN/vlc-htsp-plugin.git"
 
-inherit git-r3 toolchain-funcs
+inherit git-r3 multilib toolchain-funcs
 
 DESCRIPTION="Plugin for VLC to access TVHeadend via HTSP"
 HOMEPAGE="https://github.com/BtbN/vlc-htsp-plugin"
@@ -29,4 +29,9 @@ src_compile() {
 		CFLAGS="${CFLAGS} -std=gnu99 -I." \
 		CXXFLAGS="${CXXFLAGS} -std=gnu++0x -I." \
 		LDFLAGS="${LDFLAGS} -Wl,-no-undefined,-z,defs"
+}
+
+src_install() {
+	emake install DESTDIR="${D}" libdir="\$(PREFIX)/$(get_libdir)"
+	dodoc "${DOCS[@]}"
 }

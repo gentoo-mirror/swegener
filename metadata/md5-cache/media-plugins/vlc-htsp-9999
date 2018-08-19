@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile unpack
+DEFINED_PHASES=compile install unpack
 DEPEND=>=media-video/vlc-2 virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=Plugin for VLC to access TVHeadend via HTSP
 EAPI=6
@@ -7,4 +7,4 @@ LICENSE=GPL-2
 RDEPEND=>=media-video/vlc-2
 SLOT=0
 _eclasses_=git-r3	918d6a744039c29af2cadc7317459765	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
-_md5_=0f98095a70a4d0cdfc783f12b45a9992
+_md5_=e6454f5c155cb190a2f1bf6347f3b798

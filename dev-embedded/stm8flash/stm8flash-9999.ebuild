@@ -5,16 +5,15 @@ EAPI="6"
 
 inherit toolchain-funcs
 
-DESCRIPTION="Link programmer for STM8 devices"
-HOMEPAGE="https://github.com/vdudouyt/stm8flash"
 if [[ ${PV} == "9999" ]]; then
 	EGIT_REPO_URI="https://github.com/vdudouyt/stm8flash.git"
 	inherit git-r3
 else
-	SRC_URI=""
-	KEYWORDS="~amd64"
 	die "no releases yet"
 fi
+
+DESCRIPTION="Link programmer for STM8 devices"
+HOMEPAGE="https://github.com/vdudouyt/stm8flash"
 
 LICENSE="GPL-2"
 SLOT="0"

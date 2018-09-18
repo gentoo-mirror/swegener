@@ -5,5 +5,5 @@ EAPI=6
 HOMEPAGE=http://www.micropython.org/
 LICENSE=MIT
 SLOT=0
-_eclasses_=git-r3	918d6a744039c29af2cadc7317459765
+_eclasses_=git-r3	0d4635eeb5a96cd5315597a47eba25c9
 _md5_=721a188d4ae0169809e32cbd88568c44

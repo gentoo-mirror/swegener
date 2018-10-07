@@ -1,12 +1,12 @@
-DEFINED_PHASES=configure install prepare unpack
-DEPEND=app-arch/bzip2 dev-libs/expat dev-libs/glib:2 net-misc/curl sys-libs/zlib x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 gps? ( >=sci-geosciences/gpsd-2.96 ) exif? ( libexif? ( media-libs/libexif ) !libexif? ( media-libs/gexiv2 ) ) magic? ( sys-apps/file ) mapnik? ( sci-geosciences/mapnik ) sqlite? ( dev-db/sqlite:3 ) app-text/gnome-doc-utils dev-util/intltool dev-util/gtk-doc dev-util/gtk-doc-am app-text/rarian dev-libs/libxslt virtual/pkgconfig sys-devel/gettext >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=configure install postinst postrm prepare unpack
+DEPEND=app-arch/bzip2 dev-libs/expat dev-libs/glib:2 net-misc/curl sys-libs/zlib x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 gps? ( >=sci-geosciences/gpsd-2.96 ) exif? ( libexif? ( media-libs/libexif ) !libexif? ( media-libs/gexiv2 ) ) magic? ( sys-apps/file ) mapnik? ( sci-geosciences/mapnik ) sqlite? ( dev-db/sqlite:3 ) app-text/gnome-doc-utils dev-util/intltool dev-util/gtk-doc dev-util/gtk-doc-am app-text/rarian dev-libs/libxslt virtual/pkgconfig sys-devel/gettext >=sys-apps/sed-4 >=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=GPS data editor and analyzer
 EAPI=6
-HOMEPAGE=http://viking.sourceforge.net/
+HOMEPAGE=https://sourceforge.net/projects/viking/
 IUSE=doc +exif libexif gps +magic mapnik nls sqlite
 LICENSE=GPL-2
 RDEPEND=app-arch/bzip2 dev-libs/expat dev-libs/glib:2 net-misc/curl sys-libs/zlib x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 gps? ( >=sci-geosciences/gpsd-2.96 ) exif? ( libexif? ( media-libs/libexif ) !libexif? ( media-libs/gexiv2 ) ) magic? ( sys-apps/file ) mapnik? ( sci-geosciences/mapnik ) sqlite? ( dev-db/sqlite:3 ) sci-geosciences/gpsbabel
 SLOT=0
 SRC_URI=doc? ( mirror://sourceforge/viking/viking.pdf )
-_eclasses_=git-r3	0d4635eeb5a96cd5315597a47eba25c9
-_md5_=0b0c129747532791dc21f279fa297f3d
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	git-r3	0d4635eeb5a96cd5315597a47eba25c9	gnome2-utils	c6060f4ab634aca444c4b2176b0f3877	ltprune	08f9e1d9ee0af8f5d9a7854efbcd8c0e	multilib	b2f01ad412baf81650c23fcf0975fa33	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	f164325a2cdb5b3ea39311d483988861	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf	xdg-utils	93b2dfbb00a09161e1e7f6360c0f7f6b
+_md5_=78c0d346f5e56471be15e6c8757810e8

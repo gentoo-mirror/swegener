@@ -3,8 +3,10 @@
 
 EAPI="6"
 
+inherit gnome2-utils
+
 DESCRIPTION="GPS data editor and analyzer"
-HOMEPAGE="http://viking.sourceforge.net/"
+HOMEPAGE="https://sourceforge.net/projects/viking/"
 IUSE="doc +exif libexif gps +magic mapnik nls sqlite"
 SRC_URI="doc? ( mirror://sourceforge/${PN}/${PN}.pdf )"
 if [[ ${PV} == "9999" ]]; then
@@ -82,4 +84,14 @@ src_install() {
 		insinto /usr/share/doc/${PF}
 		doins "${DISTDIR}"/${PN}.pdf
 	fi
+}
+
+pkg_postinst() {
+	xdg_desktop_database_update
+	gnome2_icon_cache_update
+}
+
+pkg_postrm() {
+	xdg_desktop_database_update
+	gnome2_icon_cache_update
 }

@@ -21,7 +21,7 @@ IUSE="python test"
 REQUIRED_USE="python? ( ${PYTHON_REQUIRED_USE} )"
 
 CDEPEND="
-	dev-lang/perl
+	dev-lang/perl:=
 	dev-perl/File-DesktopEntry
 	dev-perl/libwww-perl
 	dev-util/distro-info

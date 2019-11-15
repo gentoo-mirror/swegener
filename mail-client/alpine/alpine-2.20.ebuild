@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="debug doc ipv6 kerberos ldap nls onlyalpine passfile smime spell ssl threads"
 
-DEPEND="virtual/pam
+DEPEND="sys-libs/pam
 	>=sys-libs/ncurses-5.1:0
 	ssl? ( dev-libs/openssl:0= )
 	ldap? ( net-nds/openldap )

@@ -5,7 +5,7 @@ EAPI="7"
 
 EGIT_REPO_URI="https://github.com/wontfix-org/klemmbrett.git"
 
-PYTHON_COMPAT=( python{2_7,3_{6,7,8}} )
+PYTHON_COMPAT=( python3_{6,7,8} )
 
 inherit git-r3 distutils-r1
 

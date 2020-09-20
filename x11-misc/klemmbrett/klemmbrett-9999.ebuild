@@ -19,7 +19,7 @@ KEYWORDS=""
 IUSE=""
 
 DEPEND=""
-RDEPEND="dev-python/pygtk:2
-	dev-python/pygobject:2
+RDEPEND="x11-libs/gtk+:3[introspection,X]
+	dev-python/pygobject:3[${PYTHON_USEDEP}]
 	dev-python/notify2
 	dev-libs/keybinder:3"

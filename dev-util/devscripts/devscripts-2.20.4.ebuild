@@ -10,7 +10,7 @@ DISTUTILS_OPTIONAL=true
 inherit distutils-r1
 
 DESCRIPTION="Scripts to make the life of a Debian Package maintainer easier"
-HOMEPAGE="https://anonscm.debian.org/gitweb/?p=collab-maint/devscripts.git"
+HOMEPAGE="https://salsa.debian.org/debian/devscripts"
 SRC_URI="mirror://debian/pool/main/d/${PN}/${PN}_${PV}.tar.xz"
 
 LICENSE="GPL-2+"

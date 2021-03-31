@@ -3,9 +3,10 @@ DEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=wrapper around the standard ping tool
 EAPI=6
 HOMEPAGE=http://denilson.sa.nom.br/prettyping/
+INHERIT=git-r3
 LICENSE=MIT
 PROPERTIES=live
 RDEPEND=net-misc/iputils app-shells/bash virtual/awk
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=00fdfdc6746f8fe64ff3283cdba054c7

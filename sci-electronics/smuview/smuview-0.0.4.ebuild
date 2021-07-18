@@ -26,7 +26,7 @@ DEPEND=">=dev-cpp/glibmm-2.28.0
 	>=dev-qt/qtgui-5.7
 	>=dev-qt/qtwidgets-5.7
 	>=x11-libs/qwt-6.1.2
-	>=dev-libs/boost-1.55
+	>=dev-libs/boost-1.54
 	>=sci-libs/libsigrok-0.5.2[cxx]"
 RDEPEND="${DEPEND}"
 BDEPEND="doc? ( dev-ruby/asciidoctor )

@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="7"
 
-inherit cmake-utils
+inherit cmake
 
 MY_P="${P#pidgin-}"
 
@@ -23,6 +23,7 @@ S="${WORKDIR}"/${MY_P}
 
 src_prepare() {
 	default
+	cmake_src_prepare
 	sed -i \
 		-e "/#define AWAYONLOCK_VERSION / s/\"[^\"]\\+\"/\"${PVR}\"/" \
 		awayonlock.c

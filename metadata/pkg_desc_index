@@ -15,3 +15,4 @@ net-analyzer/prettyping 9999: wrapper around the standard ping tool
 net-libs/libcidr 1.2.3: IP CIDR address manipulation
 sci-geosciences/viking 9999: GPS data editor and analyzer
 x11-misc/klemmbrett 9999: Easy clipboard management
+x11-plugins/pidgin-awayonlock 0.5.2: Change your Pidgin status when the screensaver gets activated

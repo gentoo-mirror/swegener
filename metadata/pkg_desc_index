@@ -13,6 +13,7 @@ media-plugins/obs-gstreamer 0.3.2 9999: Feed GStreamer pipelines into OBS Studio
 media-plugins/vlc-htsp 9999: Plugin for VLC to access TVHeadend via HTSP
 net-analyzer/prettyping 9999: wrapper around the standard ping tool
 net-libs/libcidr 1.2.3: IP CIDR address manipulation
+sci-electronics/smuview 0.0.5 9999: SmuView is a Qt based source measure unit GUI for sigrok
 sci-geosciences/viking 9999: GPS data editor and analyzer
 x11-misc/klemmbrett 9999: Easy clipboard management
 x11-plugins/pidgin-awayonlock 0.5.2: Change your Pidgin status when the screensaver gets activated

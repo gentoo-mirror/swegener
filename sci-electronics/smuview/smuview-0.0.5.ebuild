@@ -3,7 +3,7 @@
 
 EAPI="7"
 
-inherit cmake-utils xdg-utils
+inherit cmake xdg-utils
 
 if [[ ${PV} == "9999" ]]; then
 	EGIT_REPO_URI="https://github.com/knarfS/smuview.git"
@@ -33,7 +33,8 @@ BDEPEND="doc? ( dev-ruby/asciidoctor )
 	virtual/pkgconfig"
 
 src_prepare() {
-	cmake-utils_src_prepare
+	default
+	cmake_src_prepare
 	if use doc; then
 		sed -i \
 			-e "/MANUAL_INST_SUBDIR/ s:share/doc/smuview:share/doc/${PF}:" \
@@ -49,11 +50,11 @@ src_configure() {
 	local mycmakeargs=(
 		-DDISABLE_WERROR=TRUE
 	)
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_compile() {
-	cmake-utils_src_compile all $(use doc && echo manual-html)
+	cmake_src_compile all $(use doc && echo manual-html)
 }
 
 pkg_postrm() {

@@ -1,14 +1,15 @@
+BDEPEND=sys-devel/gnuconfig >=app-portage/elt-patches-20170815 || ( >=sys-devel/automake-1.16.5:1.16 ) >=sys-devel/autoconf-2.71 >=sys-devel/libtool-2.4 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=configure install postinst postrm prepare unpack
-DEPEND=app-arch/bzip2 dev-libs/expat dev-libs/glib:2 net-misc/curl sys-libs/zlib x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 gps? ( >=sci-geosciences/gpsd-2.96 ) exif? ( libexif? ( media-libs/libexif ) !libexif? ( media-libs/gexiv2 ) ) magic? ( sys-apps/file ) mapnik? ( sci-geosciences/mapnik ) sqlite? ( dev-db/sqlite:3 ) app-text/gnome-doc-utils dev-util/intltool dev-util/gtk-doc dev-util/gtk-doc-am app-text/rarian dev-libs/libxslt virtual/pkgconfig sys-devel/gettext >=dev-vcs/git-1.8.2.1[curl]
+DEPEND=app-arch/bzip2 >=dev-tcltk/expect-5.45.4 dev-db/sqlite:3 dev-libs/expat >=dev-libs/glib-2.44:2 >=dev-libs/json-glib-0.16 dev-libs/nettle net-misc/curl sys-libs/zlib >=x11-libs/gdk-pixbuf-2.26:2 >=x11-libs/gtk+-3.22:3 geoclue? ( >=app-misc/geoclue-2.4.4:2.0 ) gps? ( >=sci-geosciences/gpsd-3.20 ) exif? ( libexif? ( media-libs/libexif ) !libexif? ( media-libs/gexiv2 ) ) libnova? ( sci-libs/libnova ) magic? ( sys-apps/file ) oauth? ( net-libs/liboauth ) app-text/yelp-tools dev-util/intltool dev-util/gtk-doc dev-util/gtk-doc-am dev-libs/libxslt virtual/pkgconfig sys-devel/gettext
 DESCRIPTION=GPS data editor and analyzer
-EAPI=6
-HOMEPAGE=https://sourceforge.net/projects/viking/
-INHERIT=gnome2-utils git-r3
-IUSE=doc +exif libexif gps +magic mapnik nls sqlite
+EAPI=8
+HOMEPAGE=https://github.com/viking-gps/viking/
+INHERIT=autotools xdg-utils git-r3
+IUSE=doc +exif libexif libnova geoclue gps +magic nls oauth
 LICENSE=GPL-2
 PROPERTIES=live
-RDEPEND=app-arch/bzip2 dev-libs/expat dev-libs/glib:2 net-misc/curl sys-libs/zlib x11-libs/gdk-pixbuf:2 x11-libs/gtk+:2 gps? ( >=sci-geosciences/gpsd-2.96 ) exif? ( libexif? ( media-libs/libexif ) !libexif? ( media-libs/gexiv2 ) ) magic? ( sys-apps/file ) mapnik? ( sci-geosciences/mapnik ) sqlite? ( dev-db/sqlite:3 ) sci-geosciences/gpsbabel
+RDEPEND=app-arch/bzip2 >=dev-tcltk/expect-5.45.4 dev-db/sqlite:3 dev-libs/expat >=dev-libs/glib-2.44:2 >=dev-libs/json-glib-0.16 dev-libs/nettle net-misc/curl sys-libs/zlib >=x11-libs/gdk-pixbuf-2.26:2 >=x11-libs/gtk+-3.22:3 geoclue? ( >=app-misc/geoclue-2.4.4:2.0 ) gps? ( >=sci-geosciences/gpsd-3.20 ) exif? ( libexif? ( media-libs/libexif ) !libexif? ( media-libs/gexiv2 ) ) libnova? ( sci-libs/libnova ) magic? ( sys-apps/file ) oauth? ( net-libs/liboauth ) sci-geosciences/gpsbabel
 SLOT=0
-SRC_URI=doc? ( mirror://sourceforge/viking/viking.pdf )
-_eclasses_=toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	gnome2-utils	2116cec8f46f4d1b0a88c5b1f1575dd3	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
-_md5_=78c0d346f5e56471be15e6c8757810e8
+SRC_URI=doc? ( https://github.com/viking-gps/viking/releases/download/viking-9999/viking.pdf )
+_eclasses_=gnuconfig	b6b3e92f8b8c996400074b5f61a59256	toolchain-funcs	1542e649be915f43f6908a9e93909961	multilib	5ca4e49abed8e3a2f7b56920eadee157	libtool	241a8f577b9781a42a7421e53448a44e	autotools	9e6965bfaa00f52cc61e0d4bc44c87b3	xdg-utils	fffb53a53cf17c9c0c998a3c0a590c7e	git-r3	b9ac6f96d2a88edb5b351df634dc5e53
+_md5_=6f1025b7c5ed504d6d094d8565322f69

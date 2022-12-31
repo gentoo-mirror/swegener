@@ -1,0 +1,16 @@
+ src/common.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git i/src/common.c w/src/common.c
+index ecac76e..2aabb35 100644
+--- i/src/common.c
++++ w/src/common.c
+@@ -39,7 +39,7 @@ pyuv_PyUnicode_EncodeFSDefault(PyObject *unicode)
+         return PyUnicode_AsEncodedString(unicode, Py_FileSystemDefaultEncoding, "surrogateescape");
+     else
+ #endif
+-        return PyUnicode_EncodeUTF8(PyUnicode_AS_UNICODE(unicode), PyUnicode_GET_SIZE(unicode), "surrogateescape");
++        return PyUnicode_AsUTF8String(unicode);
+ }
+ 
+ 

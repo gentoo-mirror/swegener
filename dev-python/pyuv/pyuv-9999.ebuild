@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="8"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..11} )
 
 inherit distutils-r1
 
@@ -25,10 +25,15 @@ IUSE=""
 DEPEND="dev-libs/libuv"
 RDEPEND="${DEPEND}"
 
+PATCHES=(
+	"${FILESDIR}"/pyuv-utf8.patch
+	"${FILESDIR}"/pyuv-python-3.10.patch
+)
+
 src_configure() {
 	cat >>setup.cfg <<-EOF
 
 		[build_ext]
-		use-system-libuv=1
+		use_system_libuv=1
 	EOF
 }

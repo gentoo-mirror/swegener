@@ -1,9 +1,9 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="8"
 
-PYTHON_COMPAT=( python3_{7..9} )
+PYTHON_COMPAT=( python3_{8..10} )
 
 inherit distutils-r1
 
@@ -26,3 +26,7 @@ DEPEND=""
 RDEPEND="${DEPEND}"
 
 S="${WORKDIR}"/python-${PN}-${P}
+
+PATCHES=(
+	"${FILESDIR}"/${P}-python-3.7.patch
+)

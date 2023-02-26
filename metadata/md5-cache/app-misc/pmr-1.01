@@ -1,6 +1,6 @@
 DEFINED_PHASES=compile install
 DESCRIPTION=displays the data bandwidth and total number of bytes passing through a pipe
-EAPI=7
+EAPI=8
 HOMEPAGE=https://zakalwe.fi/~shd/foss/pmr/
 INHERIT=toolchain-funcs
 KEYWORDS=~amd64 ~x86
@@ -8,4 +8,4 @@ LICENSE=public-domain
 SLOT=0
 SRC_URI=https://zakalwe.fi/~shd/foss/pmr/pmr-1.01.tar.gz
 _eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157
-_md5_=c7e58cfda01485f76ccd18fd6f1a2845
+_md5_=6e848d0f14c6f417e1327a59332ece1f

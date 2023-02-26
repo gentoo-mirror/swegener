@@ -1,13 +1,13 @@
 # Copyright 1999-2017 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI="6"
+EAPI="8"
 
 inherit toolchain-funcs
 
 DESCRIPTION="IP CIDR address manipulation"
-HOMEPAGE="http://www.over-yonder.net/~fullermd/projects/libcidr/"
-SRC_URI="http://www.over-yonder.net/~fullermd/projects/libcidr/${P}.tar.xz"
+HOMEPAGE="https://www.over-yonder.net/~fullermd/projects/libcidr"
+SRC_URI="https://www.over-yonder.net/~fullermd/projects/libcidr/${P}.tar.xz"
 
 LICENSE="BSD-2"
 SLOT="0"

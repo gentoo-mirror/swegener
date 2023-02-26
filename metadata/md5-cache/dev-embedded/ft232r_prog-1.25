@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile install
 DEPEND=dev-embedded/libftdi:0=
 DESCRIPTION=Tool for reconfiguring FTDI FT232R chips
-EAPI=7
-HOMEPAGE=http://rtr.ca/ft232r/
+EAPI=8
+HOMEPAGE=https://rtr.ca/ft232r/
 INHERIT=toolchain-funcs
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=dev-embedded/libftdi:0=
 SLOT=0
-SRC_URI=http://rtr.ca/ft232r/ft232r_prog-1.25.tar.gz
+SRC_URI=https://rtr.ca/ft232r/ft232r_prog-1.25.tar.gz
 _eclasses_=toolchain-funcs	6001248ef162a5fa2a21ce132a212f6b	multilib	5ca4e49abed8e3a2f7b56920eadee157
-_md5_=3cce4a91df67b61eab73a571d483a0eb
+_md5_=8cc144d3964f5d8e475e1ea40fe2071e

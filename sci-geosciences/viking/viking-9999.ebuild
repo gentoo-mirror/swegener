@@ -48,7 +48,7 @@ DEPEND="${COMMONDEPEND}
 	app-text/yelp-tools
 	dev-util/intltool
 	dev-util/gtk-doc
-	dev-util/gtk-doc-am
+	dev-build/gtk-doc-am
 	dev-libs/libxslt
 	virtual/pkgconfig
 	sys-devel/gettext

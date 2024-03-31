@@ -4,9 +4,6 @@ dev-embedded/ihextools 0.3: Tools for Intel HEX
 dev-embedded/stm32flash 9999: Open source flash program for STM32 using the ST serial bootloader
 dev-embedded/stm8flash 9999: Link programmer for STM8 devices
 dev-lang/micropython 9999: Micro Python
-dev-python/fibers 1.1.0 9999: Lightweight cooperative microthreads for Python
-dev-python/gruvi 0.10.3 9999: Synchronous evented IO
-dev-python/pyuv 1.4.0 9999: Python interface for libuv
 media-plugins/obs-gstreamer 0.3.2 9999: Feed GStreamer pipelines into OBS Studio
 media-plugins/vlc-htsp 9999: Plugin for VLC to access TVHeadend via HTSP
 net-libs/libcidr 1.2.3: IP CIDR address manipulation

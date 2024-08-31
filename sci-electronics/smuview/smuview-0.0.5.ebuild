@@ -3,7 +3,8 @@
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_10 )
+PYTHON_COMPAT=( python3_13 )
+
 inherit cmake python-single-r1 xdg-utils
 
 if [[ ${PV} == "9999" ]]; then
@@ -20,15 +21,17 @@ HOMEPAGE="https://github.com/knarfS/smuview"
 LICENSE="GPL-3"
 SLOT="0"
 IUSE="doc"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND=">=dev-cpp/glibmm-2.28.0
 	>=dev-libs/glib-2.28.0
-	>=dev-qt/qtcore-5.7
-	>=dev-qt/qtgui-5.7
-	>=dev-qt/qtwidgets-5.7
+	>=dev-qt/qtcore-5.7:5
+	>=dev-qt/qtgui-5.7:5
+	>=dev-qt/qtwidgets-5.7:5
 	>=x11-libs/qwt-6.1.2
 	>=dev-libs/boost-1.54
-	>=sci-libs/libsigrok-0.5.2[cxx]"
+	>=sci-libs/libsigrok-0.5.2[cxx]
+	${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
 BDEPEND="doc? ( dev-ruby/asciidoctor )
 	virtual/pkgconfig"

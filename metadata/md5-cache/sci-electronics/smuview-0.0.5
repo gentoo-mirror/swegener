@@ -1,15 +1,16 @@
 BDEPEND=doc? ( dev-ruby/asciidoctor ) virtual/pkgconfig app-alternatives/ninja >=dev-build/cmake-3.20.5
 DEFINED_PHASES=compile configure install postinst postrm prepare setup test
-DEPEND=>=dev-cpp/glibmm-2.28.0 >=dev-libs/glib-2.28.0 >=dev-qt/qtcore-5.7 >=dev-qt/qtgui-5.7 >=dev-qt/qtwidgets-5.7 >=x11-libs/qwt-6.1.2 >=dev-libs/boost-1.54 >=sci-libs/libsigrok-0.5.2[cxx]
+DEPEND=>=dev-cpp/glibmm-2.28.0 >=dev-libs/glib-2.28.0 >=dev-qt/qtcore-5.7:5 >=dev-qt/qtgui-5.7:5 >=dev-qt/qtwidgets-5.7:5 >=x11-libs/qwt-6.1.2 >=dev-libs/boost-1.54 >=sci-libs/libsigrok-0.5.2[cxx] python_single_target_python3_13? ( dev-lang/python:3.13 )
 DESCRIPTION=SmuView is a Qt based source measure unit GUI for sigrok
 EAPI=8
 HOMEPAGE=https://github.com/knarfS/smuview
 INHERIT=cmake python-single-r1 xdg-utils
-IUSE=doc +python_single_target_python3_10
+IUSE=doc +python_single_target_python3_13
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-3
-RDEPEND=>=dev-cpp/glibmm-2.28.0 >=dev-libs/glib-2.28.0 >=dev-qt/qtcore-5.7 >=dev-qt/qtgui-5.7 >=dev-qt/qtwidgets-5.7 >=x11-libs/qwt-6.1.2 >=dev-libs/boost-1.54 >=sci-libs/libsigrok-0.5.2[cxx]
+RDEPEND=>=dev-cpp/glibmm-2.28.0 >=dev-libs/glib-2.28.0 >=dev-qt/qtcore-5.7:5 >=dev-qt/qtgui-5.7:5 >=dev-qt/qtwidgets-5.7:5 >=x11-libs/qwt-6.1.2 >=dev-libs/boost-1.54 >=sci-libs/libsigrok-0.5.2[cxx] python_single_target_python3_13? ( dev-lang/python:3.13 )
+REQUIRED_USE=^^ ( python_single_target_python3_13 )
 SLOT=0
 SRC_URI=https://github.com/knarfS/smuview/archive/v0.0.5.tar.gz -> smuview-0.0.5.tar.gz
 _eclasses_=toolchain-funcs	333970c740aa7b1a92e4fcdc52f612bd	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	10a50dfaf728b802fcfd37f8d0da9056	python-utils-r1	6881b056477c23167d9a6b33e146374e	python-single-r1	f7abe75c203a988aa9b5c460b6c7d0f1
-_md5_=6bcc099bddd698115a04e44bbf768f9e
+_md5_=abf87c13319c807f207be86a4d54c358

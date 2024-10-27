@@ -1,0 +1,10 @@
+--- smuview-0.0.5/external/pybind11/include/pybind11/cast.h
++++ smuview-0.0.5/external/pybind11/include/pybind11/cast.h
+@@ -15,6 +15,7 @@
+ #include "detail/descr.h"
+ #include "detail/internals.h"
+ #include <array>
++#include <cstdint>
+ #include <limits>
+ #include <tuple>
+ #include <type_traits>

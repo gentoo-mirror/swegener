@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_13 )
+PYTHON_COMPAT=( python3_10 )
 
 inherit cmake python-single-r1 xdg-utils
 
@@ -36,8 +36,13 @@ RDEPEND="${DEPEND}"
 BDEPEND="doc? ( dev-ruby/asciidoctor )
 	virtual/pkgconfig"
 
+PATCHES=(
+	"${FILESDIR}"/${P}-c++14.patch
+	"${FILESDIR}"/${P}-cstdint.patch
+	"${FILESDIR}"/${P}-qwt-6.2.patch
+)
+
 src_prepare() {
-	default
 	cmake_src_prepare
 	if use doc; then
 		sed -i \

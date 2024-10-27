@@ -1,0 +1,33 @@
+--- smuview-0.0.5/CMakeLists.txt
++++ smuview-0.0.5/CMakeLists.txt
+@@ -47,8 +47,9 @@
+ 	cmake_policy(SET CMP0054 NEW)
+ endif()
+ 
+-# SmuView, QCodeEditor and pybind11 only need C++11
+-set(CMAKE_CXX_STANDARD 11)
++# SmuView, QCodeEditor and pybind11 only need C++11, but the upcoming Boost.Math
++# (Boost 1.82 release) library requires C++14 as minimum language standard.
++set(CMAKE_CXX_STANDARD 14)
+ 
+ if(WIN32)
+ 	# On Windows/MinGW we need to statically link to libraries.
+@@ -374,7 +375,7 @@
+ add_definitions(-DQT_NO_KEYWORDS)
+ add_definitions(-D__STDC_LIMIT_MACROS)
+ add_definitions(-Wall -Wextra -Woverloaded-virtual -Wdeprecated-declarations) # -Weffc++ -Wconversion -Wsign-conversion)
+-add_definitions(-std=c++11)
++add_definitions(-std=c++14)
+ add_definitions(-DBOOST_MATH_DISABLE_FLOAT128=1)
+ 
+ if(NOT DISABLE_WERROR)
+--- smuview-0.0.5/external/QCodeEditor/CMakeLists.txt
++++ smuview-0.0.5/external/QCodeEditor/CMakeLists.txt
+@@ -98,7 +98,6 @@
+ if(CMAKE_COMPILER_IS_GNUCXX)
+     target_compile_options(QCodeEditor
+         PRIVATE
+-        -ansi
+         -pedantic
+         -Wall
+         -Wextra

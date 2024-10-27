@@ -3,7 +3,7 @@
 
 EAPI="8"
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 
 inherit cmake python-single-r1 xdg-utils
 
@@ -37,7 +37,6 @@ BDEPEND="doc? ( dev-ruby/asciidoctor )
 	virtual/pkgconfig"
 
 src_prepare() {
-	default
 	cmake_src_prepare
 	if use doc; then
 		sed -i \

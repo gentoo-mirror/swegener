@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=dev-embedded/libftdi:0=
 SLOT=0
 SRC_URI=https://rtr.ca/ft232r/ft232r_prog-1.25.tar.gz
-_eclasses_=toolchain-funcs	6afdb6107430c1832ca7e16aacbf8fa1	multilib	b2a329026f2e404e9e371097dda47f96
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169
 _md5_=8cc144d3964f5d8e475e1ea40fe2071e

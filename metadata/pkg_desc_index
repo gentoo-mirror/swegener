@@ -7,7 +7,7 @@ dev-lang/micropython 9999: Micro Python
 media-plugins/obs-gstreamer 0.3.2 9999: Feed GStreamer pipelines into OBS Studio
 media-plugins/vlc-htsp 9999: Plugin for VLC to access TVHeadend via HTSP
 net-libs/libcidr 1.2.3: IP CIDR address manipulation
-sci-electronics/smuview 0.0.5 9999: SmuView is a Qt based source measure unit GUI for sigrok
+sci-electronics/smuview 9999: SmuView is a Qt based source measure unit GUI for sigrok
 sci-geosciences/viking 9999: GPS data editor and analyzer
 x11-misc/klemmbrett 9999: Easy clipboard management
 x11-plugins/pidgin-awayonlock 0.5.2 0.6: Change your Pidgin status when the screensaver gets activated

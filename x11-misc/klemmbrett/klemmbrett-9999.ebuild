@@ -5,7 +5,8 @@ EAPI="8"
 
 EGIT_REPO_URI="https://github.com/wontfix-org/klemmbrett.git"
 
-PYTHON_COMPAT=( python3_{9..11} )
+DISTUTILS_USE_PEP517="setuptools"
+PYTHON_COMPAT=( python3_{11..13} )
 
 inherit git-r3 distutils-r1
 

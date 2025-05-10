@@ -24,3 +24,14 @@ RDEPEND="x11-libs/gtk+:3[introspection,X]
 	dev-python/pygobject:3[${PYTHON_USEDEP}]
 	dev-python/notify2
 	dev-libs/keybinder:3"
+
+src_install() {
+	distutils-r1_src_install
+
+	insinto /etc
+	doins conf/klemmbrett.conf
+	insinto /etc/xdg/autostart
+	doins conf/klemmbrett-autostart.desktop
+	insinto /usr/share/klemmbrett
+	doins data/*.svg
+}

@@ -86,5 +86,5 @@ src_install() {
 		dodoc examples/*.c
 	fi
 
-	use static-libs || rm "${ED}"/usr/$(get_libdir)/${PN}.a || die
+	use static-libs || rm -f "${ED}"/usr/$(get_libdir)/${PN}{,pp}.a || die
 }
